@@ -1,0 +1,8 @@
+/* Now use the display: flex,
+and flex-direction: column CSS properties to change your form to look like this. */
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Tahoma, Verdana, Geneva, sans-serif;
+}
