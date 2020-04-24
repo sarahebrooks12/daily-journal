@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-    <h1>Daily Journal</h1>
-    <form action="">
-        <fieldset>
-            <label for="journalDate">Date of entry</label><br>
-            <input type="date" name="journalDate" id="journalDate">
-        </fieldset>
-        <fieldset>
-            <label for="shortInputField">Concepts</label><br>
-            <input type="typeText" name="conceptsCovered" id="conceptsCovered">
-        </fieldset>
-        <fieldset>
-            <label for="entry">Daily Entry</label><br>
-            <textarea name="entry" id="dailyEntry" cols="30" rows="10"></textarea>
-        </fieldset>
-        <fieldset>
+  <body>
+    <div class="row">
+      <div class="column1">
+        <h1>Daily Journal</h1>
+        <form action="">
+          <fieldset>
+            <label for="journalDate">Date of entry</label><br />
+            <input type="date" name="journalDate" id="journalDate" />
+          </fieldset>
+          <fieldset>
+            <label for="shortInputField">Concepts</label><br />
+            <input
+              type="typeText"
+              name="conceptsCovered"
+              id="conceptsCovered"
+            />
+          </fieldset>
+          <fieldset>
+            <label for="entry">Daily Entry</label><br />
+            <textarea
+              name="entry"
+              id="dailyEntry"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </fieldset>
+          <fieldset>
             <label for="mood">Emotion of the Day:</label>
-            <br>
+            <br />
             <select name="mood" id="moods">
-                <option value="choose">-- Please select option --</option>
-            <option value="happy">happy</option>
-            <option value="sad">sad</option>
-            <option value="okay">okay</option>
-            <option value="stressed">stressed</option>
-            <option value="tired">tired</option>
-            <option value="irritable">irritable</option>
-            <option value="accomplish">accomplished</option>
+              <option value="choose">-- Please select option --</option>
+              <option value="happy">happy</option>
+              <option value="sad">sad</option>
+              <option value="okay">okay</option>
+              <option value="stressed">stressed</option>
+              <option value="tired">tired</option>
+              <option value="irritable">irritable</option>
+              <option value="accomplish">accomplished</option>
             </select>
-        </fieldset>
-    </form>
-    <button class="button">Submit</button>
+          </fieldset>
+          <button class="button">Submit</button>
+        </form>
+      </div>
+      <!-- <button class="button">Submit</button> -->
+      <div class="column2">
+        <article class="entryLog">
+<!-- dom printer text here -->
+        </article>
+      </div>
+    </div>
     <script src="journal.js"></script>
-</body>
-
+  </body>
 </html>
 
 <!-- Single Journal Entry You defined form fields for the following bits of data to collect from a user of your application. Date of the journal entry. Concepts covered (which will be the title of the entry). The long-form contents of the journal entry. The mood of the journal entry. In your JavaScript file, define an object that will represent a journal entry in your code. /* Define the keys and value for a JavaScript object that represents a journal entry about what you learned today */ const journalEntry

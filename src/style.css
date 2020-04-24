@@ -10,7 +10,7 @@ body {
     
 }
 .button {
-    background-color: #bd2c8e;
+    background-color: lightpink;
     border: none;
     color: black;
     padding: 15px 32px;
@@ -18,5 +18,17 @@ body {
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    width: 15em;
+    /* width: 15em; */
+  }
+
+  .row {
+      display:flex;
+  }
+
+  .column2 {
+      display: flex;
+      margin: 2em;
+      padding: 1em;
+      border: 4px, double, lightpink;
+      width: 20em;
   }
