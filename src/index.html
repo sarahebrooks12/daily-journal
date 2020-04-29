@@ -10,7 +10,7 @@
   <body>
     <div class="row">
       <div class="column1">
-        <h1>Daily Journal</h1>
+        <h1>Daily Journal</h1><br />
         <form action="">
           <fieldset>
             <label for="journalDate">Date of entry</label><br />
@@ -29,31 +29,31 @@
             <textarea
               name="entry"
               id="dailyEntry"
-              cols="30"
+              cols="60"
               rows="10"
             ></textarea>
           </fieldset>
           <fieldset>
             <label for="mood">Emotion of the Day:</label>
-            <br />
+            <br/>
             <select name="mood" id="moods">
               <option value="choose">-- Please select option --</option>
-              <option value="happy">happy</option>
-              <option value="sad">sad</option>
-              <option value="okay">okay</option>
-              <option value="stressed">stressed</option>
-              <option value="tired">tired</option>
-              <option value="irritable">irritable</option>
-              <option value="accomplish">accomplished</option>
+              <option value="happy">Happy</option>
+              <option value="sad">Sad</option>
+              <option value="okay">Okay</option>
+              <option value="stressed">Stressed</option>
+              <option value="tired">Tired</option>
+              <option value="irritable">Irritable</option>
+              <option value="accomplish">Accomplished</option>
             </select>
           </fieldset>
-          <button class="button">Submit</button>
         </form>
+        <button class="button" id="save">Submit</button>
       </div>
       <!-- <button class="button">Submit</button> -->
       <div class="column2">
         <article class="entryLog">
-<!-- dom printer text here -->
+<!-- dom  text here -->
         </article>
       </div>
     </div>

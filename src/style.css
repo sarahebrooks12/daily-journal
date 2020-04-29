@@ -2,33 +2,48 @@
 and flex-direction: column CSS properties to change your form to look like this. */
 
 body {
-    font-family: Geneva, Tahoma, Verdana, sans-serif;
-    background-color: #8bbedd;
-    display: flex;
-    flex-direction: column;
-    width: 25em;
-    
+  font-family: Geneva, Tahoma, Verdana, sans-serif;
+  /* background-image: url(https://i.pinimg.com/originals/37/9f/51/379f51f53f82ca3a25ae0f349b0c9a64.jpg); */
+  background-color: #8bbedd;
+  display: flex;
+  flex-direction: column;
+  /* width: 25em; */
 }
 .button {
-    background-color: lightpink;
-    border: none;
-    color: black;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    /* width: 15em; */
-  }
+  background-color: lightpink;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  /* width: 15em; */
+}
 
-  .row {
-      display:flex;
-  }
+.row {
+  display: flex;
+  flex: 10%;
+}
 
-  .column2 {
-      display: flex;
-      margin: 2em;
-      padding: 1em;
-      border: 4px, double, lightpink;
-      width: 20em;
-  }
+.column1 {
+  border: 4px double lightpink;
+  /* display: flex; */
+  margin: 1em;
+  padding: 0.5em;
+  flex: 20%;
+  text-align: center;
+}
+
+.column2 {
+  border: 4px double lightpink;
+  display: flex;
+  margin: 1em;
+  padding: 0.5em;
+  flex: 25%;
+  text-align: center;
+}
+
+#conceptsCovered {
+  width: 25vw;
+}
