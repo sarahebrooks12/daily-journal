@@ -1,37 +1,15 @@
-/*
-    Define the keys and value for a JavaScript object that
-    represents a journal entry about what you learned today
-    date
-    concept
-    entry
-    mood
-*/
-const journalEntry = {
-  date: "04/15/2020",
-  concept: "JavaScript objects",
-  entry:
-    "nothing really makes sense but Jordan and Tommy keep saying to trust the process. That isn't easy for me but I'm going to keep chugging.",
-  mood: "stressed",
-};
-const journalEntry2 = {
-  date: "04/17/2020",
-  concept: "Printing to the DOM",
-  entry:
-    "I'm trying to get all of the separate things I know to combine in my head but it just isn't happening. I can feel that the click is close but it is so frustrating to not be excelling at this.",
-  mood: "stressed",
-};
-const journalEntry3 = {
-  date: "04/18/2020",
-  concept: "manipulating the DOM",
-  entry:
-    "I definitely am having such severe imposter syndrome. I feel like an absolute failure and like I will never understand any of this. I have had trouble with the whole program, but I didn't expect to succeed overnight. These last two days have been so tough. Even Tommy said that when he went through this with the first cohort, he really struggled.",
-  mood: "stressed",
-};
+let journalEntry = {
+  date: "",
+  concept: "",
+  entry: "",
+  mood: "",
+} 
+
+
+
 let completeEntry = [];
 
-completeEntry.push(journalEntry);
-completeEntry.push(journalEntry2);
-completeEntry.push(journalEntry3);
+// completeEntry.push(journalEntry);
 
 /*
     Purpose: To create, and return, a string template that
@@ -42,13 +20,13 @@ completeEntry.push(journalEntry3);
 const makeJournalEntryComponent = () => {
   return `
 <div id="journalEntry">
-<h1>${journalEntry.concept}</h1>
-<p>${journalEntry.entry}</p>
-<h3><strong>Mood: ${journalEntry.mood}</strong></h3>
-<p>${journalEntry.date}</p>
+<h1 id="concept">${journalEntry.concept}</h1>
+<p id="entry">${journalEntry.entry}</p>
+<h3 id="emotion"><strong>Mood: ${journalEntry.mood}</strong></h3>
+<p id="todayDate">${journalEntry.date}</p>
 <span>* * * * * * * * * * * * * * * * * * </span>
 </div>
-  `;
+  `
 };
 
 /*
@@ -68,8 +46,17 @@ renderJournalEntries(completeEntry);
 
 // In your Daily Journal form, add an event listener to the submit/ save button. The callback function for your event listener should do the following things:
 document.querySelector("#save").addEventListener("click", function () {
-  if (event.target.id === save) {
-console.log("CLICK")  }
+  if (event.target.id === "save") {
+    let jConcept = document.querySelector("#concept").value
+    let jEntry = document.querySelector("#entry").value
+    let jMood = document.querySelector("#emotion").value
+    let jDate = document.querySelector("#todayDate").value
+console.log("WHAT IS THIS", jConcept)
+    // document.querySelector("#entryLog").innerHTML += makeJournalEntryComponent(jConcept, jEntry, jMood, jDate)
+
+  
+    // const personAddress = document.querySelector("#address").value
+  }
 })
 
 
